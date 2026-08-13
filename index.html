@@ -4,21 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyd's Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 8px;
+            color: #ecf0f1;
+        }
+
+        .owner-section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .owner-section h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        .owner-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 15px;
+            border: 3px solid #2c3e50;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- 1. Shop Name -->
-    <h1>Cyd's Clothing</h1>
+    <header>
+        <!-- 1. <h1> with your shop's name -->
+        <h1>Cyd's Clothing</h1>
 
-    <!-- 2. Tagline -->
-    <p>Your go-to store for comfortable, stylish, and everyday fashion essentials.</p>
+        <!-- 2. <p> tagline describing what you sell -->
+        <p class="tagline">Your go-to store for comfortable, stylish, and everyday fashion essentials.</p>
+    </header>
 
-    <!-- 3. Owner Section -->
-    <section>
-        <h2>Cydrick</h2>
-        <p>Hi! I am Cydrick, an ICT student and the founder of Cyd's Clothing. I aim to provide trendy and high-quality apparel for everyone.</p>
-        <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/617851528_2721704481508758_7978189111295760444_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeErq0tSslL0ioA4qCmAqZ34Z5sdcHkPyChnmx1weQ_IKAiUBVwu_9Xm1DXH23B9zTx-1F8JVWBHUWFjM9svPXAG&_nc_ohc=0itKsmacGdMQ7kNvwFq4mua&_nc_oc=AdozOQW7iecLxmcsIuR6CBf9X0SbSPm247VkY9hcfETF3vGxFA-A2-JeCx8Ssf9uNM0&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=TDp0DbT30irNtO_PbETFFw&_nc_ss=7c2a8&oh=00_AQG783Y9tS2QOoxibXNqCGm640ENAMWFTqJgnvz3Roz8nw&oe=6A83E668" alt="Photo of Cydrick, owner of Cyd's Clothing">
-    </section>
+    <main>
+        <!-- 3. Owner section -->
+        <section class="owner-section">
+            <h2>Cydrick</h2>
+            <p>Hi! I am Cydrick, an ICT student and the founder of Cyd's Clothing. I aim to provide trendy, high-quality, and affordable apparel for everyone.</p>
+            
+            <!-- <img> element with a real alt attribute -->
+            <img src="owner.jpg" alt="Photo of Cydrick, owner of Cyd's Clothing">
+        </section>
+    </main>
 
 </body>
 </html>
