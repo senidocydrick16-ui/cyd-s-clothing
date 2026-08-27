@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact Us</h1>
+    <p>Have product inquiries, order questions, or feedback? Get in touch with us using the form or social links below!</p>
+
+    <!-- Social Media Links Section -->
+    <fieldset>
+        <legend>Connect with Cydrick</legend>
+        <p>
+            <b>Facebook:</b> 
+            <a href="https://www.facebook.com/cydrick.senido.2025" target="_blank">Cydrick Senido on Facebook</a>
+        </p>
+        <p>
+            <b>Instagram:</b> 
+            <a href="https://www.instagram.com/prnspecedie16?igsi=am45czA5MGprYXpn" target="_blank">@prnspecedie16 on Instagram</a>
+        </p>
+    </fieldset>
+
+    <br>
+
+    <!-- Contact Form Section -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Your Details</legend>
+
+            <!-- 1. Name input -->
+            <p>
+                <label for="user-name">Name:</label><br>
+                <input type="text" id="user-name" name="user_name" required>
+            </p>
+
+            <!-- 2. Email input -->
+            <p>
+                <label for="user-email">Email:</label><br>
+                <input type="email" id="user-email" name="user_email" required>
+            </p>
+
+            <!-- 3. Subject dropdown -->
+            <p>
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>-- Select an option --</option>
+                    <option value="inquiry">Product Inquiry</option>
+                    <option value="order">Order Status</option>
+                    <option value="feedback">Store Feedback</option>
+                    <option value="other">Something Else</option>
+                </select>
+            </p>
+
+            <!-- 4. Message textarea -->
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="user_message" rows="5" cols="30" required></textarea>
+            </p>
+
+            <!-- Submit button -->
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
