@@ -15,13 +15,10 @@
         </ul>
     </nav>
 
-    <!-- Requirement 1: Product name as <h1> -->
     <h1>Dryfit T-shirt</h1>
 
-    <!-- Requirement 2: Larger photo with proper alt text -->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EH7SaMnR6FO4yfdN3BcydbWQSipj5ex7ExGbhxpTVgl6Po6IavKsPeg_&s=10" alt="Dryfit T-shirt activewear" width="100%">
 
-    <!-- Requirement 3: Full description -->
     <section>
         <h2>Product Description</h2>
         <p>
@@ -30,7 +27,6 @@
         </p>
     </section>
 
-    <!-- Requirement 4: Details table using <th> headers -->
     <section>
         <h2>Product Specifications</h2>
         <table border="1">
@@ -51,6 +47,64 @@
                 </tr>
             </tbody>
         </table>
+    </section>
+
+    <!-- Order Enquiry Form -->
+    <hr>
+    <section>
+        <h2>Order Enquiry</h2>
+        <form action="#" method="post">
+            
+            <!-- 1. Quantity Input -->
+            <p>
+                <label for="quantity-dryfit">Quantity (1-20):</label><br>
+                <input type="number" id="quantity-dryfit" name="quantity" min="1" max="20" value="1" required>
+            </p>
+
+            <!-- 2. Delivery Method (Radio buttons) -->
+            <fieldset>
+                <legend>Select Delivery Method</legend>
+                
+                <input type="radio" id="del-standard-df" name="delivery_method" value="standard" checked>
+                <label for="del-standard-df">Standard Delivery (3-5 Days)</label><br>
+
+                <input type="radio" id="del-express-df" name="delivery_method" value="express">
+                <label for="del-express-df">Express Delivery (1-2 Days)</label><br>
+
+                <input type="radio" id="del-pickup-df" name="delivery_method" value="pickup">
+                <label for="del-pickup-df">Store Pick-up</label>
+            </fieldset>
+
+            <br>
+
+            <!-- 3. Optional Extras (Checkboxes) -->
+            <fieldset>
+                <legend>Optional Extras</legend>
+
+                <input type="checkbox" id="ext-gift-df" name="extras" value="gift_wrapping">
+                <label for="ext-gift-df">Gift Wrapping (+₱50)</label><br>
+
+                <input type="checkbox" id="ext-priority-df" name="extras" value="express_handling">
+                <label for="ext-priority-df">Priority Handling (+₱30)</label><br>
+
+                <input type="checkbox" id="ext-stickers-df" name="extras" value="free_stickers">
+                <label for="ext-stickers-df">Include Free Sticker Pack</label>
+            </fieldset>
+
+            <br>
+
+            <!-- 4. Contact Email Input -->
+            <p>
+                <label for="email-dryfit">Your Contact Email:</label><br>
+                <input type="email" id="email-dryfit" name="order_email" placeholder="example@email.com" required>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Submit Order Enquiry</button>
+            </p>
+
+        </form>
     </section>
 
 </body>
