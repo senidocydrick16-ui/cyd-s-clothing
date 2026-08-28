@@ -49,5 +49,63 @@
         </table>
     </section>
 
+    <!-- Order Enquiry Form -->
+    <hr>
+    <section>
+        <h2>Order Enquiry</h2>
+        <form action="#" method="post">
+            
+            <!-- 1. Quantity Input -->
+            <p>
+                <label for="quantity-polo">Quantity (1-20):</label><br>
+                <input type="number" id="quantity-polo" name="quantity" min="1" max="20" value="1" required>
+            </p>
+
+            <!-- 2. Delivery Method (Radio buttons) -->
+            <fieldset>
+                <legend>Select Delivery Method</legend>
+                
+                <input type="radio" id="del-standard-cp" name="delivery_method" value="standard" checked>
+                <label for="del-standard-cp">Standard Delivery (3-5 Days)</label><br>
+
+                <input type="radio" id="del-express-cp" name="delivery_method" value="express">
+                <label for="del-express-cp">Express Delivery (1-2 Days)</label><br>
+
+                <input type="radio" id="del-pickup-cp" name="delivery_method" value="pickup">
+                <label for="del-pickup-cp">Store Pick-up</label>
+            </fieldset>
+
+            <br>
+
+            <!-- 3. Optional Extras (Checkboxes) -->
+            <fieldset>
+                <legend>Optional Extras</legend>
+
+                <input type="checkbox" id="ext-gift-cp" name="extras" value="gift_wrapping">
+                <label for="ext-gift-cp">Gift Wrapping (+₱50)</label><br>
+
+                <input type="checkbox" id="ext-priority-cp" name="extras" value="express_handling">
+                <label for="ext-priority-cp">Priority Handling (+₱30)</label><br>
+
+                <input type="checkbox" id="ext-stickers-cp" name="extras" value="free_stickers">
+                <label for="ext-stickers-cp">Include Free Sticker Pack</label>
+            </fieldset>
+
+            <br>
+
+            <!-- 4. Contact Email Input -->
+            <p>
+                <label for="email-polo">Your Contact Email:</label><br>
+                <input type="email" id="email-polo" name="order_email" placeholder="example@email.com" required>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Submit Order Enquiry</button>
+            </p>
+
+        </form>
+    </section>
+
 </body>
 </html>
