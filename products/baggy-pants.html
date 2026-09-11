@@ -2,110 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Baggy Pants - Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baggy Pants - Online Shop</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Baggy Pants</h1>
+    <main>
+        <article class="place-card">
+            <h2>Baggy Pants</h2>
+            <p><b>₱250.00</b></p>
+            <p>Relaxed-fit streetwear pants featuring durable denim fabric and a comfortable wide-leg silhouette.</p>
+            <img src="https://www.hallensteins.com/content/products/ab-baggy-denim-cargo-pant-swedish-black-front-10001534.jpg?optimize=high&width=450" alt="Baggy Pants">
+        </article>
+    </main>
 
-    <img src="https://www.hallensteins.com/content/products/ab-baggy-denim-cargo-pant-swedish-black-front-10001534.jpg?optimize=high&width=450" alt="Black Baggy Denim Cargo Pants" width="100%">
-
-    <section>
-        <h2>Product Description</h2>
-        <p>
-            Elevate your streetwear look with these relaxed-fit Baggy Pants. Crafted from heavy-duty, high-quality denim fabric, 
-            these pants feature a wide-leg silhouette that blends modern urban style with ultimate comfort and mobility.
-        </p>
-    </section>
-
-    <section>
-        <h2>Product Specifications</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Price</th>
-                    <th>Material</th>
-                    <th>Available Sizes</th>
-                    <th>Fit Type</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>₱250.00</td>
-                    <td>Durable Cotton Denim</td>
-                    <td>28, 30, 32, 34</td>
-                    <td>Relaxed / Wide-Leg</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Order Enquiry Form -->
-    <hr>
-    <section>
-        <h2>Order Enquiry</h2>
-        <form action="#" method="post">
-            
-            <!-- 1. Quantity Input -->
-            <p>
-                <label for="quantity-baggy">Quantity (1-20):</label><br>
-                <input type="number" id="quantity-baggy" name="quantity" min="1" max="20" value="1" required>
-            </p>
-
-            <!-- 2. Delivery Method (Radio buttons) -->
-            <fieldset>
-                <legend>Select Delivery Method</legend>
-                
-                <input type="radio" id="del-standard-bp" name="delivery_method" value="standard" checked>
-                <label for="del-standard-bp">Standard Delivery (3-5 Days)</label><br>
-
-                <input type="radio" id="del-express-bp" name="delivery_method" value="express">
-                <label for="del-express-bp">Express Delivery (1-2 Days)</label><br>
-
-                <input type="radio" id="del-pickup-bp" name="delivery_method" value="pickup">
-                <label for="del-pickup-bp">Store Pick-up</label>
-            </fieldset>
-
-            <br>
-
-            <!-- 3. Optional Extras (Checkboxes) -->
-            <fieldset>
-                <legend>Optional Extras</legend>
-
-                <input type="checkbox" id="ext-gift-bp" name="extras" value="gift_wrapping">
-                <label for="ext-gift-bp">Gift Wrapping (+₱50)</label><br>
-
-                <input type="checkbox" id="ext-priority-bp" name="extras" value="express_handling">
-                <label for="ext-priority-bp">Priority Handling (+₱30)</label><br>
-
-                <input type="checkbox" id="ext-stickers-bp" name="extras" value="free_stickers">
-                <label for="ext-stickers-bp">Include Free Sticker Pack</label>
-            </fieldset>
-
-            <br>
-
-            <!-- 4. Contact Email Input -->
-            <p>
-                <label for="email-baggy">Your Contact Email:</label><br>
-                <input type="email" id="email-baggy" name="order_email" placeholder="example@email.com" required>
-            </p>
-
-            <!-- Submit Button -->
-            <p>
-                <button type="submit">Submit Order Enquiry</button>
-            </p>
-
-        </form>
-    </section>
+    <footer>
+        <p>&copy; 2026 Online Shop. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
