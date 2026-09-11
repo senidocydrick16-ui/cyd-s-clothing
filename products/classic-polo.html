@@ -2,110 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Classic Polo Shirt - Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Polo Shirt - Online Shop</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Classic Polo Shirt</h1>
+    <main>
+        <article class="place-card">
+            <h2>Classic Polo Shirt</h2>
+            <p><b>₱299.00</b></p>
+            <p>A comfortable smart polo shirt with a tailored collar and buttoned placket for everyday style.</p>
+            <img src="https://shop.bench.com.ph/cdn/shop/files/BIY0041SG2_FL_F_ZA.jpg?v=1766140100" alt="Classic Polo Shirt">
+        </article>
+    </main>
 
-    <img src="https://shop.bench.com.ph/cdn/shop/files/BIY0041SG2_FL_F_ZA.jpg?v=1766140100" alt="Classic Polo Shirt" width="100%">
-
-    <section>
-        <h2>Product Description</h2>
-        <p>
-            A smart-casual essential for your wardrobe. The Classic Polo Shirt combines a tailored collar, 
-            a clean buttoned placket, and breathable cotton blend fabric to give you a polished, sharp look for both casual outings and semi-formal events.
-        </p>
-    </section>
-
-    <section>
-        <h2>Product Specifications</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Price</th>
-                    <th>Material</th>
-                    <th>Available Sizes</th>
-                    <th>Closure Type</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>₱299.00</td>
-                    <td>Cotton-Pique Blend</td>
-                    <td>S, M, L, XL, XXL</td>
-                    <td>Two-button Placket</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Order Enquiry Form -->
-    <hr>
-    <section>
-        <h2>Order Enquiry</h2>
-        <form action="#" method="post">
-            
-            <!-- 1. Quantity Input -->
-            <p>
-                <label for="quantity-polo">Quantity (1-20):</label><br>
-                <input type="number" id="quantity-polo" name="quantity" min="1" max="20" value="1" required>
-            </p>
-
-            <!-- 2. Delivery Method (Radio buttons) -->
-            <fieldset>
-                <legend>Select Delivery Method</legend>
-                
-                <input type="radio" id="del-standard-cp" name="delivery_method" value="standard" checked>
-                <label for="del-standard-cp">Standard Delivery (3-5 Days)</label><br>
-
-                <input type="radio" id="del-express-cp" name="delivery_method" value="express">
-                <label for="del-express-cp">Express Delivery (1-2 Days)</label><br>
-
-                <input type="radio" id="del-pickup-cp" name="delivery_method" value="pickup">
-                <label for="del-pickup-cp">Store Pick-up</label>
-            </fieldset>
-
-            <br>
-
-            <!-- 3. Optional Extras (Checkboxes) -->
-            <fieldset>
-                <legend>Optional Extras</legend>
-
-                <input type="checkbox" id="ext-gift-cp" name="extras" value="gift_wrapping">
-                <label for="ext-gift-cp">Gift Wrapping (+₱50)</label><br>
-
-                <input type="checkbox" id="ext-priority-cp" name="extras" value="express_handling">
-                <label for="ext-priority-cp">Priority Handling (+₱30)</label><br>
-
-                <input type="checkbox" id="ext-stickers-cp" name="extras" value="free_stickers">
-                <label for="ext-stickers-cp">Include Free Sticker Pack</label>
-            </fieldset>
-
-            <br>
-
-            <!-- 4. Contact Email Input -->
-            <p>
-                <label for="email-polo">Your Contact Email:</label><br>
-                <input type="email" id="email-polo" name="order_email" placeholder="example@email.com" required>
-            </p>
-
-            <!-- Submit Button -->
-            <p>
-                <button type="submit">Submit Order Enquiry</button>
-            </p>
-
-        </form>
-    </section>
+    <footer>
+        <p>&copy; 2026 Online Shop. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
