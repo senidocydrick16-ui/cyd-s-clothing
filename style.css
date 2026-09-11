@@ -74,27 +74,55 @@ main {
     padding: 10px;
 }
 
-.place-card {
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.product-card {
+    flex: 1 1 240px;
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
     border-left: 5px solid var(--brand);
-    margin-bottom: 20px;
 }
 
-.place-card h2,
-.place-card h3 {
+.product-card h3 {
     font-size: 1.4rem;
     color: var(--brand);
     margin-top: 0;
 }
 
-.place-card img {
+.product-card img {
+    width: 100%;
     max-width: 250px;
     height: auto;
     border-radius: 5px;
     display: block;
     margin-top: 10px;
+}
+
+.owner-info {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 5px solid var(--brand);
+    margin-top: 30px;
+}
+
+.owner-info h2 {
+    font-size: 1.4rem;
+    color: var(--brand);
+    margin-top: 0;
+}
+
+.owner-info img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 footer {
