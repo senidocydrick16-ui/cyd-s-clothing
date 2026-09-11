@@ -1,16 +1,10 @@
-/* ==========================================
-   1. VARIABLES (:root)
-   ========================================== */
 :root {
-    --brand-color: #0066cc;      /* Brand / primary colour */
-    --dark-ink: #222222;         /* Dark text colour */
-    --muted-grey: #666666;       /* Muted grey colour */
-    --light-bg: #f8f9fa;         /* Light background colour */
+    --brand: #0066cc;
+    --dark-ink: #222222;
+    --muted-grey: #666666;
+    --light-bg: #f8f9fa;
 }
 
-/* ==========================================
-   2. BASE STYLES
-   ========================================== */
 * {
     box-sizing: border-box;
 }
@@ -24,13 +18,54 @@ body {
     padding: 20px;
 }
 
-/* ==========================================
-   3. LAYOUT REGIONS
-   ========================================== */
-header {
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
-    padding: 15px;
-    border-bottom: 2px solid var(--brand-color);
+    padding: 15px 20px;
+    border-bottom: 2px solid var(--brand);
+    margin-bottom: 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: var(--brand);
+    font-weight: bold;
+}
+
+.site-header nav a:hover {
+    color: var(--dark-ink);
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-left: 5px solid var(--brand);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-banner h2 {
+    margin: 0;
+    color: var(--brand);
 }
 
 main {
@@ -39,63 +74,22 @@ main {
     padding: 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    color: var(--muted-grey);
-    border-top: 1px solid #dddddd;
-}
-
-/* ==========================================
-   4. STYLE THE NAV (Horizontal Nav Bar)
-   ========================================== */
-nav {
+.place-card {
     background-color: #ffffff;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 5px solid var(--brand);
     margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--brand-color);
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--dark-ink);
-}
-
-/* ==========================================
-   5. COMPONENTS - PRODUCT CARDS
-   ========================================== */
-.product-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 20px;                               /* At least 16px */
-    border-left: 5px solid var(--brand-color);    /* Coloured left border */
-    margin-bottom: 20px;                         /* Spacing between cards */
-}
-
-.product-card h2,
-.product-card h3 {
+.place-card h2,
+.place-card h3 {
     font-size: 1.4rem;
-    color: var(--brand-color);
+    color: var(--brand);
     margin-top: 0;
 }
 
-.product-card img {
+.place-card img {
     max-width: 250px;
     height: auto;
     border-radius: 5px;
@@ -103,54 +97,10 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* ==========================================
-   6. CONTACT FORM STYLES
-   ========================================== */
-fieldset {
+footer {
+    text-align: center;
     padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-}
-
-legend {
-    color: var(--brand-color);
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 0 8px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
-
-/* Visible focus state for keyboard accessibility */
-input:focus,
-textarea:focus {
-    outline: 3px solid var(--brand-color);
-    outline-offset: 2px;
-}
-
-/* Styled Submit Button */
-button[type="submit"],
-input[type="submit"] {
-    background-color: var(--brand-color);
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button[type="submit"]:hover,
-input[type="submit"]:hover {
-    opacity: 0.9;
+    margin-top: 30px;
+    color: var(--muted-grey);
+    border-top: 1px solid #dddddd;
 }
