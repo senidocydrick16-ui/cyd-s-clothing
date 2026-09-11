@@ -2,110 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dryfit T-shirt - Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dryfit T-shirt - Online Shop</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Dryfit T-shirt</h1>
+    <main>
+        <article class="place-card">
+            <h2>Dryfit T-shirt</h2>
+            <p><b>₱129.00</b></p>
+            <p>Breathable and moisture-wicking fabric designed to keep you cool and comfortable during workouts or casual wear.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EH7SaMnR6FO4yfdN3BcydbWQSipj5ex7ExGbhxpTVgl6Po6IavKsPeg_&s=10" alt="Dryfit T-shirt">
+        </article>
+    </main>
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EH7SaMnR6FO4yfdN3BcydbWQSipj5ex7ExGbhxpTVgl6Po6IavKsPeg_&s=10" alt="Dryfit T-shirt activewear" width="100%">
-
-    <section>
-        <h2>Product Description</h2>
-        <p>
-            Our Dryfit T-shirt is engineered with premium, lightweight, moisture-wicking fabric that actively pulls sweat away from your skin. 
-            Designed for high performance, workout sessions, or daily casual wear, it offers maximum breathability and flexible stretch to keep you cool all day long.
-        </p>
-    </section>
-
-    <section>
-        <h2>Product Specifications</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Price</th>
-                    <th>Material</th>
-                    <th>Available Sizes</th>
-                    <th>Care Instructions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>₱129.00</td>
-                    <td>100% Polyester Dryfit</td>
-                    <td>S, M, L, XL</td>
-                    <td>Machine wash cold, do not bleach</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Order Enquiry Form -->
-    <hr>
-    <section>
-        <h2>Order Enquiry</h2>
-        <form action="#" method="post">
-            
-            <!-- 1. Quantity Input -->
-            <p>
-                <label for="quantity-dryfit">Quantity (1-20):</label><br>
-                <input type="number" id="quantity-dryfit" name="quantity" min="1" max="20" value="1" required>
-            </p>
-
-            <!-- 2. Delivery Method (Radio buttons) -->
-            <fieldset>
-                <legend>Select Delivery Method</legend>
-                
-                <input type="radio" id="del-standard-df" name="delivery_method" value="standard" checked>
-                <label for="del-standard-df">Standard Delivery (3-5 Days)</label><br>
-
-                <input type="radio" id="del-express-df" name="delivery_method" value="express">
-                <label for="del-express-df">Express Delivery (1-2 Days)</label><br>
-
-                <input type="radio" id="del-pickup-df" name="delivery_method" value="pickup">
-                <label for="del-pickup-df">Store Pick-up</label>
-            </fieldset>
-
-            <br>
-
-            <!-- 3. Optional Extras (Checkboxes) -->
-            <fieldset>
-                <legend>Optional Extras</legend>
-
-                <input type="checkbox" id="ext-gift-df" name="extras" value="gift_wrapping">
-                <label for="ext-gift-df">Gift Wrapping (+₱50)</label><br>
-
-                <input type="checkbox" id="ext-priority-df" name="extras" value="express_handling">
-                <label for="ext-priority-df">Priority Handling (+₱30)</label><br>
-
-                <input type="checkbox" id="ext-stickers-df" name="extras" value="free_stickers">
-                <label for="ext-stickers-df">Include Free Sticker Pack</label>
-            </fieldset>
-
-            <br>
-
-            <!-- 4. Contact Email Input -->
-            <p>
-                <label for="email-dryfit">Your Contact Email:</label><br>
-                <input type="email" id="email-dryfit" name="order_email" placeholder="example@email.com" required>
-            </p>
-
-            <!-- Submit Button -->
-            <p>
-                <button type="submit">Submit Order Enquiry</button>
-            </p>
-
-        </form>
-    </section>
+    <footer>
+        <p>&copy; 2026 Online Shop. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
