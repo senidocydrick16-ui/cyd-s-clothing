@@ -3,60 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Online Shop</title>
+    <title>Home - Online Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="site-header">
-        <h1>Online Shop</h1>
-        <nav>
+    <div class="page">
+        <header class="site-header">
+            <h1>Online Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="sidebar-card">
+            <h3>Why Shop With Us?</h3>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>High Quality Apparel</li>
+                <li>Fast Shipping Manila</li>
+                <li>Affordable Streetwear</li>
+                <li>Easy Returns</li>
             </ul>
-        </nav>
-    </header>
+        </aside>
 
-    <main>
-        <section class="hero-banner">
-            <h2>Welcome to My Online Shop</h2>
-        </section>
+        <main>
+            <section class="hero-banner">
+                <h2>Featured Collection</h2>
+            </section>
 
-        <h2 style="color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Our Products</h2>
-        <hr style="border: 0; height: 2px; background: rgba(255,255,255,0.5); margin-bottom: 25px;">
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="https://shop.bench.com.ph/cdn/shop/files/BIY0041SG2_FL_F_ZA.jpg?v=1766140100" alt="Classic Polo Shirt">
+                    <h3>Classic Polo Shirt</h3>
+                    <p class="price"><b>₱299.00</b></p>
+                    <p>A comfortable smart polo shirt with a tailored collar for everyday style.</p>
+                    <a href="products/classic-polo.html" class="btn-details">See details</a>
+                </article>
 
-        <div class="product-grid">
-            <article class="product-card">
-                <h3>Dryfit T-shirt</h3>
-                <p><b>₱129.00</b></p>
-                <p>Breathable and moisture-wicking fabric designed to keep you cool and comfortable during workouts or casual wear.</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EH7SaMnR6FO4yfdN3BcydbWQSipj5ex7ExGbhxpTVgl6Po6IavKsPeg_&s=10" alt="Dryfit T-shirt">
-                <a href="products/dryfit-tshirt.html" class="btn-details">See details</a>
-            </article>
+                <article class="product-card">
+                    <img src="https://www.hallensteins.com/content/products/ab-baggy-denim-cargo-pant-swedish-black-front-10001534.jpg?optimize=high&width=450" alt="Baggy Pants">
+                    <h3>Baggy Pants</h3>
+                    <p class="price"><b>₱250.00</b></p>
+                    <p>Relaxed-fit streetwear pants featuring durable denim fabric.</p>
+                    <a href="products/baggy-pants.html" class="btn-details">See details</a>
+                </article>
+            </div>
+        </main>
 
-            <article class="product-card">
-                <h3>Baggy Pants</h3>
-                <p><b>₱250.00</b></p>
-                <p>Relaxed-fit streetwear pants featuring durable denim fabric and a comfortable wide-leg silhouette.</p>
-                <img src="https://www.hallensteins.com/content/products/ab-baggy-denim-cargo-pant-swedish-black-front-10001534.jpg?optimize=high&width=450" alt="Baggy Pants">
-                <a href="products/baggy-pants.html" class="btn-details">See details</a>
-            </article>
-
-            <article class="product-card">
-                <h3>Classic Polo Shirt</h3>
-                <p><b>₱299.00</b></p>
-                <p>A comfortable smart polo shirt with a tailored collar and buttoned placket for everyday style.</p>
-                <img src="https://shop.bench.com.ph/cdn/shop/files/BIY0041SG2_FL_F_ZA.jpg?v=1766140100" alt="Classic Polo Shirt">
-                <a href="products/classic-polo.html" class="btn-details">See details</a>
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Online Shop. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Online Shop. All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
