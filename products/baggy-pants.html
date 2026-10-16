@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baggy Pants - Tatak Biyaya Clothing</title>
+    <title>Baggy Pants - Tatak Biyaya</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
     <div class="page">
         <header class="site-header">
-            <h1>Tatak Biyaya Clothing</h1>
+            <h1 id="shop-title">Tatak Biyaya</h1>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -50,7 +50,7 @@
 
                     <div class="detail-group" style="margin-top: 10px;">
                         <span class="detail-label">Stock Status:</span>
-                        <span class="stock-badge warning">Only 4 items left!</span>
+                        <span id="stock-status" class="stock-badge warning"></span>
                     </div>
 
                     <div class="action-buttons">
@@ -62,9 +62,10 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Tatak Biyaya Clothing. All rights reserved.</p>
+            <p id="footer-copyright">&copy; 2026 Tatak Biyaya. All rights reserved.</p>
         </footer>
     </div>
 
+    <script src="../script.js"></script>
 </body>
 </html>
