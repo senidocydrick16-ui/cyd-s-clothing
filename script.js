@@ -62,11 +62,10 @@ if (shopStatusElement) {
     shopStatusElement.textContent = isShopOpen === true ? "Open today" : "Closed today";
 }
 
-// 7. Console logs (Required for Module 8.2)
+// 7. Console logs
 console.log('Shop Name:', shopName);
 console.log('Current Year:', currentYear);
 console.log('Running Total:', runningTotal);
-
 
 // --- INTERACTIVITY (CLICKABLE BUTTONS & SIZES) ---
 document.addEventListener('DOMContentLoaded', () => {
