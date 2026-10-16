@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tatak Biyaya Clothing</title>
+    <title>Home - Tatak Biyaya</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="page">
         <header class="site-header">
-            <h1>Tatak Biyaya Clothing</h1>
+            <h1 id="shop-title">Tatak Biyaya</h1>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -21,13 +21,14 @@
         </header>
 
         <aside class="sidebar-card">
-            <h3>Why Shop With Us?</h3>
-            <ul>
-                <li>High Quality Apparel</li>
-                <li>Fast Shipping Manila</li>
-                <li>Affordable Streetwear</li>
-                <li>Easy Returns</li>
-            </ul>
+            <h3>Store Information</h3>
+            <p><strong>Status:</strong> <span id="shop-status"></span></p>
+            <p id="product-count" style="font-weight: bold; color: var(--brand);"></p>
+            <p>Catalog Total: <span id="computed-total" style="font-weight: bold;"></span></p>
+            <hr>
+            <h3>Order Summary</h3>
+            <p>Delivery Fee: <span id="delivery-fee" style="font-weight: bold;"></span></p>
+            <p>Order Total: <span id="final-total" style="font-weight: bold;"></span></p>
         </aside>
 
         <main>
@@ -53,7 +54,7 @@
                 </article>
 
                 <article class="product-card">
-                    <img src="https://cdnd.lystit.com/photos/8855-2016/02/01/nike-black-dri-fit-training-t-shirt-product-0-969974049-normal.jpeg" alt="Dryfit T-Shirt">
+                    <img src="https://shop.bench.com.ph/cdn/shop/files/B3X0032SG1_FL_F_ZA.jpg?v=1766140100" alt="Dryfit T-Shirt">
                     <h3>Dryfit T-Shirt</h3>
                     <p class="price"><b>₱199.00</b></p>
                     <p>Breathable and lightweight athletic t-shirt for maximum comfort.</p>
@@ -63,9 +64,10 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Tatak Biyaya Clothing. All rights reserved.</p>
+            <p id="footer-copyright">&copy; 2026 Tatak Biyaya. All rights reserved.</p>
         </footer>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
