@@ -35,11 +35,37 @@
 
                 <div class="product-detail-info">
                     <h2>Baggy Pants</h2>
-                    <p class="product-price">₱250.00</p>
                     <p class="product-desc">Relaxed-fit streetwear pants featuring durable denim fabric and a comfortable wide-leg silhouette.</p>
 
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>SPEC</th>
+                                <th>DETAIL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Material</td>
+                                <td>Denim Fabric</td>
+                            </tr>
+                            <tr>
+                                <td>Fit</td>
+                                <td>Relaxed Wide-Leg</td>
+                            </tr>
+                            <tr>
+                                <td>Available Sizes</td>
+                                <td>28, 30, 32, 34</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td>₱250.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                     <div class="detail-group">
-                        <span class="detail-label">Available Sizes:</span>
+                        <span class="detail-label">Select Size:</span>
                         <div class="size-badges">
                             <span class="badge">28</span>
                             <span class="badge">30</span>
@@ -48,17 +74,50 @@
                         </div>
                     </div>
 
-                    <div class="detail-group" style="margin-top: 10px;">
-                        <span class="detail-label">Stock Status:</span>
-                        <span id="stock-status" class="stock-badge warning"></span>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button type="button" class="btn-primary">Add to Cart</button>
-                        <a href="../index.html" class="btn-secondary">← Back to Products</a>
+                    <div class="availability-card">
+                        <h4>Availability & Delivery</h4>
+                        <p>Stock: <span id="stock-status" style="font-weight: bold;"></span></p>
+                        <p>Delivery fee: <span id="delivery-fee" style="font-weight: bold;"></span></p>
+                        <p>Order total: <span id="final-total" style="font-weight: bold;"></span></p>
+                        <p>Shop: <span id="shop-status" style="font-weight: bold;"></span></p>
                     </div>
                 </div>
             </article>
+
+            <section class="enquiry-section">
+                <h3>Enquire About This Order</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" value="1" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Delivery method</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="delivery" checked> Store pickup</label>
+                            <label><input type="radio" name="delivery"> Standard delivery</label>
+                            <label><input type="radio" name="delivery"> Express delivery</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Optional extras</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Gift wrapping</label>
+                            <label><input type="checkbox"> Express handling</label>
+                            <label><input type="checkbox"> Handwritten note</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Contact email</label>
+                        <input type="email" id="email" placeholder="your.email@example.com">
+                    </div>
+
+                    <button type="button" class="btn-primary" style="width: 100%;">Send enquiry</button>
+                </form>
+            </section>
         </main>
 
         <footer>
